@@ -1,0 +1,66 @@
+@media (max-width: 1200px)
+    .container
+        width: 950px
+
+@media (max-width: 992px)
+    .container
+        width: 740px
+    .header
+        &__search
+            margin-left: 47px
+    .navbar
+        &-menu
+            &__link
+                font-size: 12px
+                line-height: 15px
+                font-weight: bold
+    .user
+        &__name
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+@media (max-width: 768px)
+    .container
+        width: 90%
+    .navbar
+        display: none
+    .search
+        display: none
+    .user
+        display: none
+
+    .mobile-menu
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        cursor: pointer
+        width: 16px
+        height: 11px
+        border: none
+        &__line
+            width: 16px
+            height: 1px
+            background-color: #000000
+
+@media (max-width: 567px)
+    .container
+        width: 90%
+    .header
+        &-logo
+            &__image
+                width: 132px
+@media (max-width: 480px)
+    .container
+        width: 87%
+    .header
+        &-logo
+            &__image
+                width: 110px
+@media (max-width: 320px)
+    .container
+        width: 85%
+    .header
+        &-logo
+            &__image
+                width: 99px
