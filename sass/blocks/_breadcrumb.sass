@@ -1,0 +1,19 @@
+.breadcrumb
+    &-list
+        display: flex
+        align-items: center
+        list-style: none
+        padding-top: 18px
+        padding-bottom: 19px
+        padding-left: 0px
+        margin: 0
+        &__item // Делает отступ
+            font-size: 10px
+            line-height: 13px
+            &:not(:last-child)
+                &::after // Псевдоэлемент
+                    content: '/' // То что надо вставлять между элементами
+                    margin-right: 4px
+        &__link
+            text-decoration: none
+            color: inherit
