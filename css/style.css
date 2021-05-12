@@ -591,6 +591,87 @@ template {
   background-image: url(../img/arrow-prev.svg);
 }
 
+.hotel-grid {
+  display: inline-flex;
+}
+
+.booking {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #0A223D;
+  border-radius: 8px;
+  margin-left: 30px;
+  color: white;
+  max-width: 350px;
+  height: 210px;
+  padding-top: 29px;
+  padding-right: 29px;
+  padding-bottom: 26px;
+  padding-left: 26px;
+}
+
+.booking__button {
+  justify-content: center;
+  background-color: #EC1F46;
+  border: none;
+  flex-shrink: 0;
+  color: white;
+  margin-top: 17px;
+  padding-top: 17px;
+  padding-right: 77px;
+  padding-bottom: 17px;
+  padding-left: 77px;
+  border-radius: 4px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.price__start {
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+
+.price__tag {
+  font-size: 24px;
+  padding-bottom: 4px;
+}
+
+.price__night {
+  font-size: 12px;
+}
+
+.price__quick {
+  padding-top: 10px;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+}
+
+.room__user {
+  padding-bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.room__home {
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 26px;
+}
+
+.room__phone {
+  font-size: 18px;
+  line-height: 25px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 950px;
