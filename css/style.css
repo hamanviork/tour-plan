@@ -593,6 +593,7 @@ template {
 
 .hotel-grid {
   display: inline-flex;
+  position: relative;
 }
 
 .booking {
@@ -600,6 +601,7 @@ template {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  flex-shrink: 0;
   background-color: #0A223D;
   border-radius: 8px;
   margin-left: 30px;
@@ -653,6 +655,7 @@ template {
 .room {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .room__user {
@@ -670,6 +673,14 @@ template {
 .room__phone {
   font-size: 18px;
   line-height: 25px;
+}
+
+.google-map {
+  width: 445px;
+  position: relative;
+  top: 240px;
+  right: 350px;
+  height: 210px;
 }
 
 @media (max-width: 1200px) {

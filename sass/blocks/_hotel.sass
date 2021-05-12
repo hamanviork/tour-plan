@@ -92,12 +92,14 @@
 .hotel
     &-grid
         display: inline-flex
+        position: relative
 
 .booking
     display: flex
     justify-content: space-between
     flex-wrap: wrap
     align-items: center
+    flex-shrink: 0
     background-color: #0A223D
     border-radius: 8px
     margin-left: 30px
@@ -139,6 +141,7 @@
 .room
     display: flex
     flex-direction: column
+    flex-wrap: wrap
     &__user
         padding-bottom: 8px
         font-size: 12px
@@ -150,3 +153,10 @@
     &__phone
         font-size: 18px
         line-height: 25px
+
+.google-map
+    width: 445px
+    position: relative
+    top: 240px
+    right: 350px
+    height: 210px
