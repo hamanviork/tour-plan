@@ -1,9 +1,29 @@
 @media (max-width: 1200px)
-    .container
+    .container, .hotel-grid
         width: 950px
+    .hotel-grid
+        display: flex
+        flex-wrap: wrap
+    .slider
+        display: flex
+        flex-wrap: wrap
+        flex-basis: 100%
+        max-width: 950px
+    .swiper
+        &-container
+            height: 550px
+    .booking
+        margin-top: 30px
+    .google-map
+        width: 300px
+        top: 0
+        right: 0
+        left: 0
+        margin-top: 30px
+        margin-left: 190px
 
 @media (max-width: 992px)
-    .container
+    .container, .hotel-grid
         width: 740px
     .header
         &__search
@@ -19,8 +39,26 @@
             font-weight: normal
             font-size: 14px
             line-height: 18px
+    .swiper
+        &-container
+            height: 480px
+    .booking
+        margin-top: 20px
+        max-width: 300px
+        height: 210px
+        &__button
+            padding-left: 55px
+            padding-right: 55px
+    .google-map
+        width: 250px
+        margin-top: 20px
+        margin-left: 80px
+        &__card
+            width: 300px
+            height: 210px
+
 @media (max-width: 768px)
-    .container
+    .container, .hotel-grid
         width: 90%
     .navbar
         display: none
@@ -28,6 +66,10 @@
         display: none
     .user
         display: none
+
+    .hotel
+        &-grid
+            margin-right: 0
 
     .mobile-menu
         display: flex
@@ -42,6 +84,29 @@
             width: 16px
             height: 1px
             background-color: #000000
+    .slider
+        max-width: 112.3%
+    .swiper
+        &-container
+            height: 380px
+    .booking
+        margin-top: 20px
+        margin-left: auto
+        margin-right: auto
+        max-width: 250px
+        height: 210px
+        &__button
+            padding-left: 29px
+            padding-right: 29px
+    .price
+        &__quick
+            font-size: 12px
+    .google-map
+        flex-wrap: nowrap
+        width: 250px
+        margin-top: 20px
+        margin-left: auto
+        margin-right: auto
 
     // Hotel
     .hotel
@@ -51,6 +116,9 @@
             margin-bottom: 0
         &-wrapper
             justify-content: space-between
+        &-grid
+            margin-left: 0
+            margin-right: 0
         &-info
             &__text
                 width: 100%
@@ -63,13 +131,20 @@
                 order: -1
                 margin-right: 0
 
-@media (max-width: 567px)
+@media (max-width: 667px)
     .container
         width: 90%
     .header
         &-logo
             &__image
                 width: 142px
+    .booking
+        max-width: 112.3%
+    .google-map
+        max-width: 380px
+        margin-right: auto
+        margin-left: auto
+
 @media (max-width: 480px)
     .container
         width: 87%
@@ -77,6 +152,12 @@
         &-logo
             &__image
                 width: 130px
+    .booking
+        max-width: 112.3%
+    .google-map
+        &__card
+            max-width: 260px
+
 @media (max-width: 320px)
     .container
         width: 85%
