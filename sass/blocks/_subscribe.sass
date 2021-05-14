@@ -2,15 +2,21 @@
     display: flex
     background-image: url(../img/background-search.jpg)
     height: 260px
+    max-width: 100%
     position: relative
     background-repeat: no-repeat
     background-position: center
-    background-size: 100%
+    background-size: cover
     background-color: transparent // Делает прозрачный бэкграунд
     margin-bottom: 50px
     color: white
-    z-index: 11
-    &::after
+    &-container
+        display: flex
+        justify-content: space-between
+        width: 730px
+        margin: auto
+        align-items: center
+    &:before
         content: ''
         position: absolute
         width: 100%
@@ -20,4 +26,45 @@
         right: 0
         left: 0
         background: rgba(10, 34, 61, 0.8)
-        z-index: 10
+
+    &-block
+        display: flex
+        flex-wrap: wrap
+        position: sticky
+        z-index: 11
+        width: 180px
+        &__subtitle
+            font-size: 24px
+        &__title
+            font-size: 36px
+            text-transform: uppercase
+    &-search
+        display: flex
+        flex-wrap: wrap
+        position: relative
+        z-index: 11
+        &__input
+            width: 350px
+            height: 55px
+            padding-left: 23px
+            padding-right: 75px
+            border: none
+            background-color: #F5FAFE
+            border-radius: 4px
+            font-size: 14px
+            line-height: 18px
+        &__button
+            position: absolute
+            width: 65px
+            height: 55px
+            background-color: $primary
+            border: none
+            border-radius: 4px
+            cursor: pointer
+            top: 0
+            right: 0
+        &__text
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            color: #fff
