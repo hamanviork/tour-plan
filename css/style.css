@@ -930,6 +930,39 @@ template {
     order: -1;
     margin-right: 0;
   }
+  .subscribe {
+    background-image: url(../img/bg-image.jpg);
+    height: 260px;
+    max-width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+  }
+  .subscribe-container {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .subscribe-block {
+    width: 220px;
+    display: block;
+  }
+  .subscribe-block__subtitle {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .subscribe-block__title {
+    flex-wrap: wrap;
+    font-size: 30px;
+  }
+  .subscribe-search {
+    margin-top: 37px;
+  }
+  .subscribe-search__input {
+    width: 300px;
+  }
 }
 
 @media (max-width: 667px) {
@@ -961,6 +994,10 @@ template {
   }
   .booking {
     max-width: 112.3%;
+  }
+  .booking__button {
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
 

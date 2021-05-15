@@ -131,6 +131,33 @@
                 order: -1
                 margin-right: 0
 
+    .subscribe
+        background-image: url(../img/bg-image.jpg)
+        height: 260px
+        max-width: 100%
+        position: relative
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        background-color: transparent // Делает прозрачный бэкграунд
+        &-container
+            align-items: flex-start
+            flex-wrap: wrap
+            width: 90%
+        &-block
+            width: 220px
+            display: block
+            //flex-basis: 100%
+            &__subtitle
+                font-size: 20px
+                margin-bottom: 5px
+            &__title
+                flex-wrap: wrap
+                font-size: 30px
+        &-search
+            margin-top: 37px
+            &__input
+                width: 300px
 @media (max-width: 667px)
     .container
         width: 90%
@@ -156,6 +183,9 @@
                 width: 130px
     .booking
         max-width: 112.3%
+        &__button
+            padding-right: 25px
+            padding-left: 25px
 
 @media (max-width: 320px)
     .container
