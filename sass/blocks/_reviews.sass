@@ -1,5 +1,6 @@
 .reviews
     margin-bottom: 200px
+    overflow: hidden
     &-title
         display: flex
         justify-content: center
@@ -10,12 +11,42 @@
         text-align: center
         text-transform: uppercase
     &-slider
-        width: 500px
-        height: 300px
-
+        width: 731px
+        min-height: 325px
+        overflow: hidden
+        background-color: #fff
         &__item
             overflow: hidden
+    &-slide
+        display: flex
+        justify-content: center
+        cursor: pointer
+        &__item
+            padding-bottom: 30px
+        &__profile
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+        &__username
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            color: #EC1F46
         &__image
+            border-radius: 50%
             width: 90px
             height: 90px
             object-fit: cover
+        &__date
+            font-weight: normal
+            font-size: 10px
+            line-height: 13px
+        &__stars
+            padding-bottom: 30px
+        &__text
+            max-width: 537px
+            font-weight: normal
+            font-size: 12px
+            line-height: 160%
+            text-align: justify
