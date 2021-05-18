@@ -778,7 +778,7 @@ template {
 }
 
 .reviews {
-  margin-bottom: 200px;
+  margin-bottom: 70px;
   overflow: hidden;
   position: relative;
 }
@@ -923,6 +923,83 @@ template {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+}
+
+.fun {
+  margin-bottom: 100px;
+}
+
+.fun__text {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 57px;
+}
+
+.fun-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fun-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+  flex-wrap: wrap;
+  padding-bottom: 24px;
+  padding-left: 26px;
+  width: 255px;
+  height: 255px;
+  color: #fff;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.fun-block__first {
+  background-image: url(../img/cart-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fun-block__second {
+  background-image: url(../img/cart-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fun-block__third {
+  background-image: url(../img/cart-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fun-block__fourth {
+  background-image: url(../img/cart-4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fun-block__text {
+  padding-bottom: 18px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.fun-block__button {
+  background-color: #EC1F46;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding-top: 7px;
+  padding-right: 22px;
+  padding-bottom: 7px;
+  padding-left: 22px;
 }
 
 @media (max-width: 1200px) {
@@ -1172,6 +1249,30 @@ template {
   }
   .reviews-title {
     font-size: 30px;
+  }
+  .fun-block {
+    width: 339px;
+    height: 255px;
+  }
+  .fun-block__first {
+    background-image: url(../img/cart-1-adaptive.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .fun-block__second {
+    background-image: url(../img/cart-2-adaptive.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .fun-block__third {
+    background-image: url(../img/cart-3-adaptive.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .fun-block__fourth {
+    background-image: url(../img/cart-4-adaptive.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

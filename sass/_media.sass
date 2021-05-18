@@ -21,6 +21,15 @@
         left: 0
         margin-top: 30px
         margin-left: 190px
+    .reviews
+        &-slider
+            height: 100%
+        &-btns
+            &__button
+                &_next
+                    margin-right: -750px
+                &_prev
+                    margin-right: 1050px
 
 @media (max-width: 992px)
     .container, .hotel-grid
@@ -39,8 +48,8 @@
             font-weight: normal
             font-size: 14px
             line-height: 18px
-    .swiper
-        &-container
+    .hotel
+        &-slider
             height: 480px
     .booking
         margin-top: 20px
@@ -57,6 +66,15 @@
             width: 300px
             height: 210px
 
+    .reviews
+        &-slider
+            width: 650px
+        &-btns
+            &__button
+                &_next
+                    margin-right: -350px
+                &_prev
+                    margin-right: 1100px
 @media (max-width: 768px)
     .container, .hotel-grid
         width: 90%
@@ -141,7 +159,8 @@
         background-size: cover
         background-color: transparent // Делает прозрачный бэкграунд
         &-container
-            align-items: flex-start
+            display: flex
+            align-items: flex-end
             flex-wrap: wrap
             width: 90%
         &-block
@@ -158,6 +177,16 @@
             margin-top: 37px
             &__input
                 width: 300px
+
+    .reviews
+        &-slider
+            width: 579px
+        &-slide
+            &__text
+                width: 455px
+        &-btns
+            display: none
+
 @media (max-width: 667px)
     .container
         width: 90%
@@ -173,7 +202,38 @@
     .google-map
         justify-content: center
         max-width: 100%
+    .reviews
+        &-slider
+            width: 90%
+            min-height: 100%
+        &-slide
+            &__text
+                width: 85%
+            &__item
+                padding-bottom: auto
 
+        &-title
+            font-size: 30px
+    .fun
+        &-block
+            width: 339px
+            height: 255px
+            &__first
+                background-image: url(../img/cart-1-adaptive.png)
+                background-repeat: no-repeat
+                background-position: center
+            &__second
+                background-image: url(../img/cart-2-adaptive.png)
+                background-repeat: no-repeat
+                background-position: center
+            &__third
+                background-image: url(../img/cart-3-adaptive.png)
+                background-repeat: no-repeat
+                background-position: center
+            &__fourth
+                background-image: url(../img/cart-4-adaptive.png)
+                background-repeat: no-repeat
+                background-position: center
 @media (max-width: 480px)
     .container
         width: 87%
