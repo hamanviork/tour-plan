@@ -11,7 +11,6 @@ const swiper2 = new Swiper('.reviews-slider', {
   loop: true,
   effect: 'coverflow',
   navigation: {
-    nextEl: '.reviews-slide-button-next',
-    prevEl: '.reviews-slide-button-prev',
-  },
-});
+    nextEl: '.reviews-btns__button_next',
+    prevEl: '.reviews-btns__button_prev',
+  },});
