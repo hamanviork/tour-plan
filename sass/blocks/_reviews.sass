@@ -2,6 +2,31 @@
     margin-bottom: 200px
     overflow: hidden
     position: relative
+    &-btns
+        width: 1110px
+        margin: auto
+        display: flex
+        justify-content: center
+        &__button
+            position: absolute
+            outline: none
+            width: 30px
+            top: 62%
+            transform: translateY(-50%) // Корректирует размеры кнопок по середине
+            z-index: 99
+            height: 30px
+            border: none
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 10px
+            background-color: transparent
+            &_next
+                margin-right: -1000px
+                background-image: url(../img/arrow-right-reviews.svg)
+            &_prev
+                margin-right: 1000px
+                background-image: url(../img/arrow-left-reviews.svg)
     &-title
         display: flex
         justify-content: center
@@ -23,6 +48,7 @@
         display: flex
         justify-content: center
         cursor: pointer
+        position: relative
         &__item
             display: flex
             flex-direction: column
@@ -31,6 +57,33 @@
             margin-top: 50px
             background-color: #fff
             width: 100%
+            border-radius: 8px
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: 13px
+                left: 62px
+                z-index: 1
+                background-image: url(../img/quota-left.svg)
+                width: 70px
+                height: 48px
+                background-repeat: no-repeat
+                background-position: center
+                background-color: transparent
+            &::after
+                content: ''
+                position: absolute
+                top: 118px
+                right: 60px
+                z-index: 1
+                background-image: url(../img/quota-right.svg)
+                width: 70px
+                height: 48px
+                background-repeat: no-repeat
+                background-position: center
+                background-color: transparent
+
         &__profile
             display: flex
             align-items: center
@@ -59,24 +112,3 @@
             font-size: 12px
             line-height: 160%
             text-align: justify
-    &-wrapper
-        &__button
-            position: absolute
-            outline: none
-            width: 30px
-            top: 55%
-            transform: translateY(-50%) // Корректирует размеры кнопок по середине
-            z-index: 99
-            height: 30px
-            border: none
-            cursor: pointer
-            background-repeat: no-repeat
-            background-position: center
-            background-size: 10px
-            background-color: transparent
-            &_next
-                right: 415px
-                background-image: url(../img/arrow-right-reviews.svg)
-            &_prev
-                left: 415px
-                background-image: url(../img/arrow-left-reviews.svg)
