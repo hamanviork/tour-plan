@@ -1,6 +1,7 @@
 .reviews
     margin-bottom: 200px
     overflow: hidden
+    position: relative
     &-title
         display: flex
         justify-content: center
@@ -14,7 +15,8 @@
         width: 731px
         min-height: 325px
         overflow: hidden
-        background-color: #fff
+        //background-color: #fff
+        position: relative
         &__item
             overflow: hidden
     &-slide
@@ -22,12 +24,19 @@
         justify-content: center
         cursor: pointer
         &__item
+            display: flex
+            flex-direction: column
+            align-items: center
             padding-bottom: 30px
+            margin-top: 50px
+            background-color: #fff
+            width: 100%
         &__profile
             display: flex
             align-items: center
             justify-content: center
             flex-direction: column
+            margin-top: -45px
         &__username
             font-weight: bold
             font-size: 12px
@@ -50,3 +59,24 @@
             font-size: 12px
             line-height: 160%
             text-align: justify
+    &-wrapper
+        &__button
+            position: absolute
+            outline: none
+            width: 30px
+            top: 55%
+            transform: translateY(-50%) // Корректирует размеры кнопок по середине
+            z-index: 99
+            height: 30px
+            border: none
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 10px
+            background-color: transparent
+            &_next
+                right: 415px
+                background-image: url(../img/arrow-right-reviews.svg)
+            &_prev
+                left: 415px
+                background-image: url(../img/arrow-left-reviews.svg)
