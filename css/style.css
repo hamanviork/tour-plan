@@ -361,7 +361,7 @@ template {
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 27px;
 }
 
 .header__search {
@@ -448,8 +448,8 @@ template {
   display: flex;
   align-items: center;
   list-style: none;
-  padding-top: 18px;
-  padding-bottom: 19px;
+  padding-top: 12px;
+  padding-bottom: 21px;
   padding-left: 0px;
   margin: 0;
 }
@@ -483,6 +483,13 @@ template {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
+}
+
+.hotel-name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .hotel-info {
@@ -1056,6 +1063,9 @@ template {
 @media (max-width: 992px) {
   .container, .hotel-grid {
     width: 740px;
+  }
+  .header-logo__image {
+    width: 132px;
   }
   .header__search {
     margin-left: 47px;
