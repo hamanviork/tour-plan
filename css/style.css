@@ -556,7 +556,7 @@ template {
   z-index: 10;
 }
 
-.hotel-grid__slide_image {
+.hotel-grid__slide-image {
   outline: none;
   width: 100%;
   height: 100%;
@@ -830,7 +830,6 @@ template {
 .reviews-slider {
   width: 731px;
   min-height: 325px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -938,12 +937,6 @@ template {
   margin-bottom: 57px;
 }
 
-.fun-wrap {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .fun-block {
   display: flex;
   flex-direction: column;
@@ -958,30 +951,41 @@ template {
   border-radius: 6px;
   margin-bottom: 20px;
   margin-right: 20px;
+  object-fit: cover;
 }
 
-.fun-block__first {
+.fun-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fun-wrap__first {
   background-image: url(../img/cart-1.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 }
 
-.fun-block__second {
+.fun-wrap__second {
   background-image: url(../img/cart-2.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 }
 
-.fun-block__third {
+.fun-wrap__third {
   background-image: url(../img/cart-3.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 }
 
-.fun-block__fourth {
+.fun-wrap__fourth {
   background-image: url(../img/cart-4.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 }
 
 .fun-block__text {
@@ -1039,6 +1043,14 @@ template {
   .reviews-btns__button_prev {
     margin-right: 1050px;
   }
+  .fun {
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+  }
+  .fun-block {
+    width: 210px;
+    height: 210px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1087,6 +1099,14 @@ template {
   }
   .reviews-btns__button_prev {
     margin-right: 1100px;
+  }
+  .fun {
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+  }
+  .fun-block {
+    width: 339px;
+    height: 255px;
   }
 }
 
@@ -1217,6 +1237,14 @@ template {
   .reviews-btns {
     display: none;
   }
+  .fun {
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+  }
+  .fun-block {
+    width: 270px;
+    height: 255px;
+  }
 }
 
 @media (max-width: 667px) {
@@ -1273,6 +1301,14 @@ template {
     background-image: url(../img/cart-4-adaptive.png);
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .fun {
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+  }
+  .fun-block {
+    width: 100%;
+    height: 300px;
   }
 }
 

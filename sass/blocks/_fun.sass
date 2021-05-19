@@ -7,10 +7,6 @@
         text-transform: uppercase
         margin-top: 60px
         margin-bottom: 57px
-    &-wrap
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
     &-block
         display: flex
         flex-direction: column
@@ -25,23 +21,32 @@
         border-radius: 6px
         margin-bottom: 20px
         margin-right: 20px
+        object-fit: cover
+    &-wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
         &__first
             background-image: url(../img/cart-1.png)
             background-repeat: no-repeat
             background-position: center
+            background-size: 100%
         &__second
             background-image: url(../img/cart-2.png)
             background-repeat: no-repeat
             background-position: center
+            background-size: 100%
         &__third
             background-image: url(../img/cart-3.png)
             background-repeat: no-repeat
             background-position: center
+            background-size: 100%
         &__fourth
             background-image: url(../img/cart-4.png)
             background-repeat: no-repeat
             background-position: center
-
+            background-size: 100%
+    &-block
         &__text
             padding-bottom: 18px
             font-weight: bold
