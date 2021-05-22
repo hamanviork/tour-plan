@@ -36,6 +36,36 @@
         &-block
             width: 210px
             height: 210px
+
+    .footer
+        &-block
+            grid-template-columns: 0.32fr 0.41fr 0.35fr
+            &__categories
+                grid-row: 4 / 5
+            &__additional
+                display: grid
+                grid-row: 4 / 5
+            &-list
+                grid-column: 1 / 4
+            &__social
+                align-content: start
+                grid-row: 2 / 3
+                grid-column: 2 / 4
+                width: 300px
+            &__legal
+                grid-row: 4 / 5
+                grid-column: 3 / 5
+            &__title--additional
+                margin-bottom: 7px
+            &-list
+                margin-top: 0
+                grid-row: 2 / 6
+        &-forms
+            &__username
+                flex-basis: 100%
+            &__phone
+                flex-basis: 100%
+                margin-top: 10px
 @media (max-width: 992px)
     .container, .hotel-grid
         width: 740px
@@ -73,6 +103,10 @@
         &__card
             width: 300px
             height: 210px
+
+    .footer
+        &-block
+            grid-template-columns: 0.32fr 0.45fr 0.35fr
 
     .reviews
         &-slider
