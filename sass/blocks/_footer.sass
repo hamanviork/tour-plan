@@ -6,6 +6,7 @@
         display: grid
         grid-template-columns: 0.25fr 0.27fr 0.30fr 0.20fr
         grid-column-gap: 20px
+        margin-bottom: 73px
         &-item
             font-weight: normal
             font-size: 14px
@@ -38,3 +39,88 @@
                 margin-right: 10px
             &-yt
                 margin-right: 10px
+    // Contacts, bottom
+    &-block
+        &-bottom
+            display: flex
+    &-contacts
+        max-width: 510px
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        //text-transform: uppercase
+        color: #fff
+        margin-right: 75px
+        &__title
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-transform: uppercase
+        &__subtitle
+            font-weight: normal
+            font-size: 14px
+            line-height: 160%
+            color: #BDBDBD
+        &__photo
+            margin-right: 18px
+        &__icon
+            display: flex
+            align-items: flex-start
+            margin-top: 28px
+            margin-left: 8px
+        &__text
+            font-weight: normal
+            font-size: 14px
+            line-height: 160%
+            color: #BDBDBD
+            text-decoration: none
+    &-form
+        width: 539px
+        &__text
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            color: #fff
+            text-transform: uppercase
+            margin-top: 0
+            margin-bottom: 34px
+    &-forms
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &__username
+            height: 50px
+            padding-left: 23px
+            padding-right: 33px
+            border: none
+            border-radius: 4px
+        &__phone
+            height: 50px
+            padding-left: 29px
+            padding-right: 23px
+            border: none
+            border-radius: 4px
+        &__message
+            margin-top: 15px
+            flex-basis: 100%
+            min-height: 123px
+            padding-top: 18px
+            padding-left: 23px
+        &__buttons
+            display: flex
+            justify-content: space-between
+            flex-basis: 100%
+            align-items: center
+            margin-top: 22px
+        &__button
+            width: 160px
+            height: 50px
+            border: none
+            background-color: $primary
+            color: #fff
+            border-radius: 4px
+        &__label
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            color: #E0E0E0
