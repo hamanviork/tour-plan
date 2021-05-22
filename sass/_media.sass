@@ -249,12 +249,21 @@
                 max-width: 104px
             &__social
                 align-content: center
+
     .footer
         padding-top: 73px
         &-block
             margin-bottom: 30px
             &__title
                 font-size: 14px
+        &-forms
+            &__label
+                display: flex
+                justify-content: end
+                margin-left: 20px
+                flex-basis: 100%
+            &__button
+                flex-basis: 100%
 
         &-contacts
             width: 100%
@@ -325,7 +334,12 @@
             &__phone
                 flex-basis: 45%
                 margin-top: 0
+            &__label
+                margin-left: 20px
         &-block
+            grid-template-columns: 0.5fr 0.5fr
+            &__social
+                grid-column: 2 / 8
             &-item
                 font-size: 14px
             &-bottom
@@ -354,6 +368,10 @@
         &__button
             padding-right: 25px
             padding-left: 25px
+
+    .footer
+        &-block
+
 @media (max-width: 320px)
     .container
         width: 85%

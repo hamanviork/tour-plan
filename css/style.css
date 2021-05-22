@@ -1196,21 +1196,26 @@ template {
 
 .footer-block-bottom-icons {
   display: flex;
+  background: #000;
+  padding: 3px;
 }
 
 .footer-block-bottom-icon {
   max-width: 15px;
+  margin-right: 3px;
+  margin-left: 3px;
+  cursor: pointer;
 }
 
 .footer-block-bottom-nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 95px;
 }
 
 .footer-block-bottom-nav__button {
-  color: #fff;
+  color: #BDBDBD;
   text-decoration: none;
   font-weight: normal;
   font-size: 12px;
@@ -1517,6 +1522,15 @@ template {
   .footer-block__title {
     font-size: 14px;
   }
+  .footer-forms__label {
+    display: flex;
+    justify-content: end;
+    margin-left: 20px;
+    flex-basis: 100%;
+  }
+  .footer-forms__button {
+    flex-basis: 100%;
+  }
   .footer-contacts {
     width: 100%;
     display: flex;
@@ -1598,6 +1612,15 @@ template {
   .footer-forms__phone {
     flex-basis: 45%;
     margin-top: 0;
+  }
+  .footer-forms__label {
+    margin-left: 20px;
+  }
+  .footer-block {
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+  .footer-block__social {
+    grid-column: 2 / 8;
   }
   .footer-block-item {
     font-size: 14px;
