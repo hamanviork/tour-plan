@@ -14,7 +14,7 @@
     <title>Best Tour Plan - отель Booking</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--mobile_fixed">
       <div class="container">
         <div class="header-top">
           <a href="#" class="header-logo">
@@ -25,7 +25,10 @@
             />
           </a>
 
-          <form action="#" class="search header__search">
+          <form
+            action="#"
+            class="search header__search header__search--mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -40,7 +43,7 @@
             </button>
           </form>
 
-          <a href="#" class="user">
+          <a href="#" class="user header__user header__user--mobile_hidden">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -64,6 +67,35 @@
     <div class="navbar">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile_hidden">
+            <a href="#" class="user navbar__user navbar__user--mobile_visible">
+              <img
+                src="img/user-avatar.jpg"
+                alt="Avatar: Nathan"
+                class="user__avatar"
+              />
+              <span class="user__name">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile_hidden">
+            <form
+              action="#"
+              class="search navbar__search navbar__search--mobile_visible"
+            >
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Search Location"
+              />
+              <button class="search__button">
+                <img
+                  src="img/search.svg"
+                  class="search__icon"
+                  alt="Icon: search"
+                />
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
@@ -680,7 +712,6 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

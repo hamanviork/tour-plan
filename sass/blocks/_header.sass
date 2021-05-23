@@ -59,8 +59,18 @@
         list-style-type: none
         padding: 0
         margin: 0
+        &__item
+            &--mobile
+                &_hidden
+                    display: none
         &__link
             color: #ffffff
             text-transform: uppercase
             text-decoration: none
             width: auto
+
+.navbar
+    &__search, &__user
+        &--mobile
+            &_visible
+                display: none

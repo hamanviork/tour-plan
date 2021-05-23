@@ -126,12 +126,52 @@
 @media (max-width: 768px)
     .container, .hotel-grid
         width: 90%
+    body
+        padding-top: 89px
+    .header--mobile_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+
     .navbar
         display: none
-    .search
-        display: none
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 85px
+        z-index: 100
+        &--visible
+            display: block
+        &-menu
+            flex-direction: column
+            align-items: center
+            &__item
+                margin-bottom: 20px
+
+    .header__search, .header__user
+        &--mobile
+            &_hidden
+                display: none
+
+    .navbar__search, .navbar__user, .navbar-menu__item
+        &--mobile
+            &_hidden
+                display: flex
+            &_visible
+                display: flex
+
     .user
-        display: none
+        &__name
+            padding-top: 10px
+            padding-left: 0
+            color: #fff
+    .navbar
+        &__user
+            flex-direction: column
+            align-items: center
 
     .hotel
         &-grid
