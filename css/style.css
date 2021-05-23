@@ -1642,6 +1642,23 @@ template {
   }
 }
 
+@media (max-width: 577px) {
+  .footer-block__social {
+    grid-column: 2 / 3;
+  }
+  .footer-block__social-icons {
+    grid-column: 1 / 2;
+    margin-top: 22px;
+  }
+  .footer-forms__username {
+    flex-basis: 100%;
+    margin-bottom: 7px;
+  }
+  .footer-forms__phone {
+    flex-basis: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .container {
     width: 87%;
@@ -1655,6 +1672,18 @@ template {
   .booking__button {
     padding-right: 25px;
     padding-left: 25px;
+  }
+  .footer-block__social {
+    width: 100%;
+    grid-column: 2 / 3;
+  }
+  .footer-block__additional {
+    grid-row: 5 / 8;
+    grid-column: 1 / 3;
+  }
+  .footer-block__legal {
+    grid-row: 8 / 8;
+    grid-column: 1 / 2;
   }
 }
 
@@ -1671,6 +1700,14 @@ template {
   .booking__button {
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .footer-block__logo {
+    grid-row: 1 / 2;
+  }
+  .footer-block__social {
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

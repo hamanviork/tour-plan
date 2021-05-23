@@ -356,6 +356,22 @@
             flex-shrink: 1
             flex-basis: 100%
 
+@media ( max-width: 577px)
+    .footer
+        &-block
+
+            &__social
+                grid-column: 2 / 3
+                &-icons
+                    grid-column: 1 / 2
+                    margin-top: 22px
+        &-forms
+            &__username
+                flex-basis: 100%
+                margin-bottom: 7px
+            &__phone
+                flex-basis: 100%
+
 @media (max-width: 480px)
     .container
         width: 87%
@@ -371,6 +387,15 @@
 
     .footer
         &-block
+            &__social
+                width: 100%
+                grid-column: 2 / 3
+            &__additional
+                grid-row: 5 / 8
+                grid-column: 1 / 3
+            &__legal
+                grid-row: 8 / 8
+                grid-column: 1 / 2
 
 @media (max-width: 320px)
     .container
@@ -384,3 +409,11 @@
         &__button
             padding-right: 20px
             padding-left: 20px
+    .footer
+        &-block
+            &__logo
+                grid-row: 1 / 2
+            &__social
+                grid-column: 1 / 2
+                grid-row: 3 / 3
+                margin-bottom: 50px
