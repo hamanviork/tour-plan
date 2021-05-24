@@ -19,4 +19,5 @@ var menuButton = document.querySelector(".mobile-menu");
 
 menuButton.addEventListener("click", function() {
   document.querySelector(".navbar").classList.toggle('navbar--visible');
+  document.querySelector("body").classList.toggle('body_hidden');
 });

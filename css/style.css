@@ -13,6 +13,10 @@ body {
   margin: auto;
 }
 
+.body_hidden {
+  overflow: hidden;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -361,7 +365,7 @@ template {
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 27px;
+  padding-bottom: 33px;
 }
 
 .header__search {
@@ -456,7 +460,7 @@ template {
   display: flex;
   align-items: center;
   list-style: none;
-  padding-top: 12px;
+  padding-top: 17px;
   padding-bottom: 21px;
   padding-left: 0px;
   margin: 0;
@@ -491,6 +495,7 @@ template {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
+  margin: 0;
 }
 
 .hotel-name {
@@ -712,7 +717,7 @@ template {
   background-position: center;
   background-size: cover;
   background-color: transparent;
-  margin-bottom: 50px;
+  margin-bottom: 13px;
   color: white;
 }
 
@@ -840,6 +845,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 70px;
 }
 
 .reviews-slider {
@@ -1362,6 +1368,11 @@ template {
   .reviews-slider {
     width: 650px;
   }
+  .reviews-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+  }
   .reviews-btns__button_next {
     margin-right: -350px;
   }
@@ -1375,6 +1386,17 @@ template {
   .fun-block {
     width: 339px;
     height: 255px;
+  }
+  .fun__text {
+    margin-top: 110px;
+  }
+  .footer-block__logo {
+    max-width: 104px;
+    align-content: center;
+    grid-row: 1 / 4;
+  }
+  .footer-block__social {
+    align-content: center;
   }
 }
 
@@ -1424,6 +1446,9 @@ template {
     padding-top: 10px;
     padding-left: 0;
     color: #fff;
+  }
+  .navbar--visible {
+    overflow: scroll;
   }
   .navbar__user {
     flex-direction: column;
@@ -1550,14 +1575,6 @@ template {
   .fun-block {
     width: 270px;
     height: 255px;
-  }
-  .footer-block__logo {
-    align-content: center;
-    grid-row: 1 / 4;
-    max-width: 104px;
-  }
-  .footer-block__social {
-    align-content: center;
   }
   .footer {
     padding-top: 73px;
@@ -1716,8 +1733,11 @@ template {
     max-width: 112.3%;
   }
   .booking__button {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 17%;
+    padding-left: 17%;
+  }
+  .search__input {
+    width: 280px;
   }
   .footer-block__social {
     width: 100%;
@@ -1746,6 +1766,12 @@ template {
   .booking__button {
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .subscribe-search__input {
+    width: 260px;
+  }
+  .search__input {
+    width: 240px;
   }
   .footer-block__logo {
     grid-row: 1 / 2;

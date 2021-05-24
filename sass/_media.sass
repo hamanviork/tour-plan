@@ -111,6 +111,10 @@
     .reviews
         &-slider
             width: 650px
+        &-title
+            font-weight: bold
+            font-size: 30px
+            line-height: 38px
         &-btns
             &__button
                 &_next
@@ -123,6 +127,17 @@
         &-block
             width: 339px
             height: 255px
+        &__text
+            margin-top: 110px
+
+    .footer
+        &-block
+            &__logo
+                max-width: 104px
+                align-content: center
+                grid-row: 1 / 4
+            &__social
+                align-content: center
 @media (max-width: 768px)
     .container, .hotel-grid
         width: 90%
@@ -169,6 +184,8 @@
             padding-left: 0
             color: #fff
     .navbar
+        &--visible
+            overflow: scroll
         &__user
             flex-direction: column
             align-items: center
@@ -280,15 +297,6 @@
         &-block
             width: 270px
             height: 255px
-
-    .footer
-        &-block
-            &__logo
-                align-content: center
-                grid-row: 1 / 4
-                max-width: 104px
-            &__social
-                align-content: center
 
     .footer
         padding-top: 73px
@@ -422,8 +430,12 @@
     .booking
         max-width: 112.3%
         &__button
-            padding-right: 25px
-            padding-left: 25px
+            padding-right: 17%
+            padding-left: 17%
+
+    .search
+        &__input
+            width: 280px
 
     .footer
         &-block
@@ -449,6 +461,16 @@
         &__button
             padding-right: 20px
             padding-left: 20px
+
+    .subscribe
+        &-search
+            &__input
+                width: 260px
+
+    .search
+        &__input
+            width: 240px
+
     .footer
         &-block
             &__logo
