@@ -107,6 +107,11 @@
     .footer
         &-block
             grid-template-columns: 0.32fr 0.45fr 0.35fr
+            &-bottom
+                &-nav
+                    justify-content: space-between
+                    &__buttons
+                        margin-right: 0
 
     .reviews
         &-slider
@@ -138,6 +143,19 @@
                 grid-row: 1 / 4
             &__social
                 align-content: center
+
+    .modal
+        &__dialog
+            max-width: 430px
+            padding-right: 65px
+            padding-left: 65px
+        &-forms
+            &__buttons
+                flex-wrap: wrap
+            &__button
+                flex-basis: 100%
+                margin-bottom: 10px
+
 @media (max-width: 768px)
     .container, .hotel-grid
         width: 90%
@@ -319,6 +337,13 @@
             flex-wrap: wrap
             flex-shrink: 1
             flex-basis: 100%
+
+    .modal
+        &__dialog
+            max-width: 430px
+            padding-right: 45px
+            padding-left: 45px
+
 @media (max-width: 667px)
     .container
         width: 90%
@@ -404,6 +429,10 @@
             flex-shrink: 1
             flex-basis: 100%
 
+    .modal
+        &__dialog
+            width: 90%
+
 @media ( max-width: 577px)
     .footer
         &-block
@@ -448,7 +477,11 @@
             &__legal
                 grid-row: 8 / 8
                 grid-column: 1 / 2
-
+            &-bottom
+                &-nav
+                    flex-wrap: wrap
+                    &__buttons
+                        margin-bottom: 10px
 @media (max-width: 320px)
     .container
         width: 85%

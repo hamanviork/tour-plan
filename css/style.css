@@ -17,6 +17,24 @@ body {
   overflow: hidden;
 }
 
+.input {
+  height: 50px;
+  padding-left: 23px;
+  padding-right: 33px;
+  border: none;
+  border-radius: 4px;
+}
+
+.message {
+  margin-top: 15px;
+  flex-basis: 100%;
+  min-height: 123px;
+  padding-top: 18px;
+  padding-left: 23px;
+  border-radius: 4px;
+  border: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -950,6 +968,7 @@ template {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+  overflow-y: auto;
 }
 
 .fun {
@@ -1166,30 +1185,12 @@ template {
   flex-wrap: wrap;
 }
 
-.footer-forms__username {
-  height: 50px;
-  padding-left: 23px;
-  padding-right: 33px;
-  border: none;
-  border-radius: 4px;
-}
-
 .footer-forms__phone {
   height: 50px;
   padding-left: 29px;
   padding-right: 23px;
   border: none;
   border-radius: 4px;
-}
-
-.footer-forms__message {
-  margin-top: 15px;
-  flex-basis: 100%;
-  min-height: 123px;
-  padding-top: 18px;
-  padding-left: 23px;
-  border-radius: 4px;
-  border: none;
 }
 
 .footer-forms__buttons {
@@ -1232,9 +1233,14 @@ template {
 
 .footer-block-bottom-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 95px;
+}
+
+.footer-block-bottom-nav__buttons {
+  display: flex;
+  margin-right: 270px;
 }
 
 .footer-block-bottom-nav__button {
@@ -1244,6 +1250,112 @@ template {
   font-size: 12px;
   line-height: 15px;
   margin-right: 16px;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  max-width: 478px;
+  min-height: 487px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 33px;
+  padding-right: 88px;
+  padding-bottom: 33px;
+  padding-left: 88px;
+  border-radius: 8px;
+  background-color: #0A223D;
+  color: #fff;
+  z-index: 1500;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-form__text {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 0;
+}
+
+.modal-forms__username {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal-forms__phone {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal-forms__email {
+  width: 100%;
+}
+
+.modal-forms__message {
+  width: 100%;
+}
+
+.modal-forms__buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.modal-forms__button {
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  border: none;
+  background-color: #EC1F46;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal-forms__label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -1374,6 +1486,12 @@ template {
   .footer-block {
     grid-template-columns: 0.32fr 0.45fr 0.35fr;
   }
+  .footer-block-bottom-nav {
+    justify-content: space-between;
+  }
+  .footer-block-bottom-nav__buttons {
+    margin-right: 0;
+  }
   .reviews-slider {
     width: 650px;
   }
@@ -1406,6 +1524,18 @@ template {
   }
   .footer-block__social {
     align-content: center;
+  }
+  .modal__dialog {
+    max-width: 430px;
+    padding-right: 65px;
+    padding-left: 65px;
+  }
+  .modal-forms__buttons {
+    flex-wrap: wrap;
+  }
+  .modal-forms__button {
+    flex-basis: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -1610,6 +1740,11 @@ template {
     flex-shrink: 1;
     flex-basis: 100%;
   }
+  .modal__dialog {
+    max-width: 430px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
 }
 
 @media (max-width: 667px) {
@@ -1712,6 +1847,9 @@ template {
     flex-shrink: 1;
     flex-basis: 100%;
   }
+  .modal__dialog {
+    width: 90%;
+  }
 }
 
 @media (max-width: 577px) {
@@ -1759,6 +1897,12 @@ template {
   .footer-block__legal {
     grid-row: 8 / 8;
     grid-column: 1 / 2;
+  }
+  .footer-block-bottom-nav {
+    flex-wrap: wrap;
+  }
+  .footer-block-bottom-nav__buttons {
+    margin-bottom: 10px;
   }
 }
 

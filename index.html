@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
@@ -11,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Best Tour Plan - отель Booking</title>
+    <title>Best Tour Plan - Hotel Booking</title>
   </head>
   <body class="body">
     <header class="header header--mobile_fixed">
@@ -246,7 +247,9 @@
               </span>
             </span>
             <!-- /.room -->
-            <button class="booking__button">View Other Options</button>
+            <button data-toggle="modal" class="button booking__button">
+              View Other Options
+            </button>
           </span>
           <!-- /.booking -->
           <div class="google-map">
@@ -618,7 +621,7 @@
             <form action="send.php" method="POST" class="footer-forms">
               <input
                 type="text"
-                class="footer-forms__username"
+                class="input footer-forms__username"
                 placeholder="Your Full Name*"
                 name="name"
                 required
@@ -632,7 +635,7 @@
               />
               <textarea
                 placeholder="Message"
-                class="footer-forms__message"
+                class="message footer-forms__message"
                 name="message"
                 required
               ></textarea>
@@ -715,6 +718,59 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <div class="modal-form">
+          <h3 class="modal-form__text">Booking</h3>
+          <form action="send.php" method="POST" class="modal-forms">
+            <input
+              type="text"
+              class="input modal-forms__username"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+            />
+            <input
+              type="tel"
+              class="input modal-forms__phone"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+            />
+            <input
+              type="email"
+              class="input modal-forms__email"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+            <textarea
+              placeholder="Message"
+              class="message modal-forms__message"
+              name="message"
+              required
+            ></textarea>
+            <div class="modal-forms__buttons">
+              <button class="modal-forms__button">Send</button>
+              <label class="modal-forms__label">*Required Fields</label>
+            </div>
+            <!-- /.modal-forms__buttons -->
+          </form>
+          <!-- /.modal-form -->
+        </div>
+        <!-- /.modal-form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
