@@ -58,13 +58,13 @@ $(document).ready(function () {
           },
         },
         messages: {
-          name: "Пожалуйста введите ваше имя",
+          name: "Please, enter your name",
           email: {
-            required: "Дай свой адрес",
+            required: "Write your email address",
             email: "Your email address must be in the format of name@domain.com"
           },
           phone: {
-            required: "Телефон обьязателен"
+            required: "Write your phone number"
           }
         },
       });
