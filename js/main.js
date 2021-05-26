@@ -16,6 +16,7 @@ $(document).ready(function () {
       prevEl: '.reviews-btns__button_prev',
     },});
 
+    // Мобильное меню
   var menuButton = document.querySelector(".mobile-menu");
 
   menuButton.addEventListener("click", function() {
@@ -26,6 +27,7 @@ $(document).ready(function () {
   var modalButton = $('[data-toggle="modal"]');
   var closeModalButton = $('.modal__close');
 
+  // Модальное окно
   modalButton.on('click', openModal)
   closeModalButton.on('click', closeModal)
 
@@ -45,7 +47,8 @@ $(document).ready(function () {
     }
 
     // Обработка формы
-    $(".form").validate({
+    $(".form").each(function() {
+      $(this).validate({
       errorClass: "invalid",
         rules: {
           name: "required",
@@ -66,3 +69,7 @@ $(document).ready(function () {
         },
       });
     });
+
+    // Маска для телефона (jquery mask plugin)
+    $('.phone_us').mask('+7 (999) 999-9999');
+});
