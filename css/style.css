@@ -35,6 +35,11 @@ body {
   border: none;
 }
 
+.invalid {
+  color: #EC1F46;
+  font-size: 11px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -409,6 +414,9 @@ template {
   padding-right: 75px;
   border: none;
   background-color: #F5FAFE;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .search__button {
@@ -443,6 +451,8 @@ template {
 .user__name {
   padding-left: 18px;
   color: #333333;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .navbar {
@@ -468,6 +478,9 @@ template {
   text-transform: uppercase;
   text-decoration: none;
   width: auto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .navbar__search--mobile_visible, .navbar__user--mobile_visible {
@@ -543,7 +556,7 @@ template {
 }
 
 .hotel-info__stars {
-  flex-basis: 100%;
+  flex-basis: 50%;
 }
 
 .hotel-info__text-mess {
@@ -579,6 +592,14 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 15.55px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.rating__counter-small {
+  font-size: 10px;
+  line-height: 13px;
 }
 
 .hotel__slider {
@@ -687,25 +708,39 @@ template {
 .price__start {
   font-size: 10px;
   padding-bottom: 5px;
+  font-size: 10px;
+  line-height: 14px;
 }
 
 .price__tag {
   font-size: 24px;
-  padding-bottom: 4px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
 }
 
 .price__night {
   font-size: 12px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .price__quick {
-  padding-top: 10px;
+  padding-top: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .room {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.room__guest {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .room__user {
@@ -721,6 +756,12 @@ template {
 }
 
 .room__phone {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.room__text-big {
+  font-weight: 600;
   font-size: 18px;
   line-height: 25px;
 }
@@ -1185,10 +1226,21 @@ template {
   flex-wrap: wrap;
 }
 
+.footer-forms__username {
+  width: 100%;
+}
+
 .footer-forms__phone {
-  height: 50px;
-  padding-left: 29px;
-  padding-right: 23px;
+  width: 100%;
+}
+
+.footer-forms__input {
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-forms__input-group {
+  flex-basis: 48%;
   border: none;
   border-radius: 4px;
 }
@@ -1315,16 +1367,16 @@ template {
 
 .modal-forms__username {
   width: 100%;
-  margin-bottom: 15px;
 }
 
 .modal-forms__phone {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal-forms__email {
   width: 100%;
+  margin-top: 15px;
 }
 
 .modal-forms__message {
@@ -1433,10 +1485,10 @@ template {
     margin-top: 0;
     grid-row: 2 / 6;
   }
-  .footer-forms__username {
+  .footer-forms__input-group__username {
     flex-basis: 100%;
   }
-  .footer-forms__phone {
+  .footer-forms__input-group__phone {
     flex-basis: 100%;
     margin-top: 10px;
   }

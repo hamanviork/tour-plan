@@ -323,10 +323,10 @@
 
           <div class="footer-form">
             <h3 class="footer-form__text">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer-forms">
+            <form action="send.php" method="POST" class="footer-forms form">
               <input
                 type="text"
-                class="footer-forms__username"
+                class="input footer-forms__username"
                 placeholder="Your Full Name*"
                 name="name"
                 required
@@ -340,9 +340,8 @@
               />
               <textarea
                 placeholder="Message"
-                class="footer-forms__message"
+                class="message footer-forms__message"
                 name="message"
-                required
               ></textarea>
               <div class="footer-forms__buttons">
                 <button class="footer-forms__button">Send</button>
@@ -423,7 +422,9 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

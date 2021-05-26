@@ -94,12 +94,18 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
+        &__username
+            width: 100%
         &__phone
-            height: 50px
-            padding-left: 29px
-            padding-right: 23px
-            border: none
-            border-radius: 4px
+            width: 100%
+        &__input
+            max-width: 100%
+            flex-wrap: wrap
+            &-group
+
+                flex-basis: 48%
+                border: none
+                border-radius: 4px
         &__buttons
             display: flex
             justify-content: space-between
@@ -119,7 +125,6 @@
             font-size: 12px
             line-height: 15px
             color: #E0E0E0
-
     &-block
         &-bottom
             &-icons
