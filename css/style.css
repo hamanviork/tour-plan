@@ -1619,6 +1619,13 @@ template {
   .footer-block__social {
     align-content: center;
   }
+  .footer-forms__input-group {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  .footer-forms__message {
+    margin-top: 0;
+  }
   .modal__dialog {
     max-width: 430px;
     padding-right: 65px;
@@ -1916,6 +1923,13 @@ template {
   }
   .footer-forms__label {
     margin-left: 20px;
+  }
+  .footer-forms__input-group {
+    flex-basis: 48%;
+    margin-bottom: 0;
+  }
+  .footer-forms__message {
+    margin-top: 15px;
   }
   .footer-block {
     grid-template-columns: 0.5fr 0.5fr;
