@@ -50,28 +50,26 @@ $(document).ready(function () {
     $(".form").each(function() {
       $(this).validate({
       errorClass: "invalid",
-        rules: {
-          name: "required",
-          email: {
-            required: true,
-            email: true
+          rules: {
+            name: "required",
+            phone: {
+              required: true,
+            },
+            email: {
+              required: true,
+              email: true
+            }
           },
-          phone: {
-            required: true,
-            phone: true
-          },
-        },
-        messages: {
-          name: "Please, enter your name",
-          email: {
-            required: "Write your email address",
-            email: "Your email address must be in the format of name@domain.com"
-          },
-          phone: {
-            required: "Write your phone number",
-            phone: "Your phone number must be in the format of +7 (999) 999-9999"
+          messages: {
+            name: "Please, write your name",
+            phone: {
+              required: "Please, write your phone number"
+            },
+            email: {
+              required: "We need your email address to contact you",
+              email: "Your email address must be in the format of name@domain.com"
+            }
           }
-        },
       });
     });
 

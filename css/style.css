@@ -1111,6 +1111,10 @@ template {
   width: 160px;
 }
 
+.fun-block__text-fourth {
+  width: 200px;
+}
+
 .fun-block__button {
   background-color: #EC1F46;
   color: #fff;
@@ -1120,6 +1124,9 @@ template {
   padding-right: 13px;
   padding-bottom: 7px;
   padding-left: 13px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .footer {
