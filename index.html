@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;800&display=swap"
@@ -144,14 +145,40 @@
     <section class="hotel">
       <div class="container">
         <div class="hotel-info">
-          <div class="hotel-info__text">
+          <div
+            class="hotel-info__text"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="hotel-wrapper">
               <div class="stars hotel-info__stars">
-                <img src="img/Star.svg" alt="Logo: Star" />
-                <img src="img/Star.svg" alt="Logo: Star" />
-                <img src="img/Star.svg" alt="Logo: Star" />
-                <img src="img/Star.svg" alt="Logo: Star" />
-                <img src="img/Star.svg" alt="Logo: Star" />
+                <img
+                  src="img/Star.svg"
+                  class="hotel-info__star"
+                  alt="Logo: Star"
+                />
+                <img
+                  src="img/Star.svg"
+                  class="hotel-info__star"
+                  alt="Logo: Star"
+                />
+                <img
+                  src="img/Star.svg"
+                  class="hotel-info__star"
+                  alt="Logo: Star"
+                />
+                <img
+                  src="img/Star.svg"
+                  class="hotel-info__star"
+                  alt="Logo: Star"
+                />
+                <img
+                  src="img/Star.svg"
+                  class="hotel-info__star"
+                  alt="Logo: Star"
+                />
               </div>
               <h1 class="hotel-name">Grand Hilton Hotel</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -163,7 +190,11 @@
             </p>
           </div>
           <!-- /.hotel-info__left -->
-          <div class="rating hotel-info__rating">
+          <div
+            class="rating hotel-info__rating"
+            data-aos="fade-down-left"
+            data-aos-duration="600"
+          >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/</span
             ><span class="rating__counter-small">5</span>
@@ -172,7 +203,7 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider">
+          <div class="slider" data-aos="fade-up-right" data-aos-duration="900">
             <div class="swiper-container hotel-slider hotel__slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide hotel-grid__slide">
@@ -225,7 +256,11 @@
             <!-- /.swiper-container -->
           </div>
           <!-- /.slider -->
-          <span class="booking">
+          <span
+            class="booking"
+            data-aos="fade-down-left"
+            data-aos-duration="700"
+          >
             <span class="price">
               <span class="price__start">price starts as</span>
               <span class="price__tag">$ 8,500</span>
@@ -253,7 +288,11 @@
             </button>
           </span>
           <!-- /.booking -->
-          <div class="google-map">
+          <div
+            class="google-map"
+            data-aos="fade-up-left"
+            data-aos-duration="1500"
+          >
             <iframe
               src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9efb26a06434d33b0ff56c737f37447465e752f3bf0a7148b7921dc1738a28b&amp;source=constructor"
               class="google-map__card"
@@ -272,15 +311,17 @@
 
     <section class="subscribe">
       <div class="subscribe-container">
-        <div class="subscribe-block">
+        <div class="subscribe-block" data-aos="fade-up">
           <span class="subscribe-block__subtitle">subscribe to our</span>
           <span class="subscribe-block__title">Newsletter</span>
         </div>
-        <form action="#" class="subscribe-search">
+        <form action="#" class="subscribe-search form" data-aos="fade-up">
           <input
-            type="text"
+            type="email"
             class="subscribe-search__input"
             placeholder="Your email address"
+            required
+            name="email"
           />
           <button class="subscribe-search__button">
             <span class="subscribe-search__text">Send</span>
@@ -294,7 +335,7 @@
     <div class="reviews">
       <div class="container">
         <h2 class="reviews-title">What people think about us</h2>
-        <div class="swiper-container reviews-slider">
+        <div class="swiper-container reviews-slider" data-aos="fade-down">
           <div class="swiper-wrapper reviews-wrapper">
             <div class="swiper-slide reviews-slide">
               <div class="reviews-slide__item">
@@ -425,21 +466,37 @@
       <div class="container">
         <div class="fun__text">Other Activities</div>
         <div class="fun-wrap">
-          <div class="fun-block fun-wrap__first">
+          <div
+            class="fun-block fun-wrap__first"
+            data-aos="fade-down-right"
+            data-aos-duration="750"
+          >
             <div class="fun-block__text">The curious corner of chamarel</div>
             <button class="fun-block__button">Book Now</button>
           </div>
-          <div class="fun-block fun-wrap__second">
+          <div
+            class="fun-block fun-wrap__second"
+            data-aos="fade-down"
+            data-aos-duration="750"
+          >
             <div class="fun-block__text">Gymkhana club golf course</div>
             <button class="fun-block__button">Book Now</button>
           </div>
-          <div class="fun-block fun-wrap__third">
+          <div
+            class="fun-block fun-wrap__third"
+            data-aos="fade-down"
+            data-aos-duration="750"
+          >
             <div class="fun-block__text">
               Tamarind falls hiking trip - full day
             </div>
             <button class="fun-block__button">Book Now</button>
           </div>
-          <div class="fun-block fun-wrap__fourth">
+          <div
+            class="fun-block fun-wrap__fourth"
+            data-aos="fade-down-left"
+            data-aos-duration="750"
+          >
             <div class="fun-block__text">The blue marine discovery quest</div>
             <button class="fun-block__button">Book Now</button>
           </div>
@@ -452,14 +509,22 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
-          <a class="footer-block__logo" href="index.html">
+          <a
+            class="footer-block__logo"
+            href="index.html"
+            data-aos="zoom-in-right"
+          >
             <img
               src="img/Best-tour-plan-vertical.svg"
               alt="Logo: Best tour plan"
               class="footer-block__logo"
             />
           </a>
-          <div class="footer-block__categories">
+          <div
+            class="footer-block__categories"
+            data-aos="zoom-out-down"
+            data-aos-duration="750"
+          >
             <h3 class="footer-block__title footer-block__title--categories">
               All categories
             </h3>
@@ -492,7 +557,11 @@
           </div>
           <!-- /.All categories -->
 
-          <div class="footer-block__additional">
+          <div
+            class="footer-block__additional"
+            data-aos="zoom-out-down"
+            data-aos-duration="750"
+          >
             <h3 class="footer-block__title footer-block__title--additional">
               Additional information
             </h3>
@@ -517,7 +586,11 @@
               </li>
             </ul>
           </div>
-          <div class="footer-block__social">
+          <div
+            class="footer-block__social"
+            data-aos="fade-up-left"
+            data-aos-duration="750"
+          >
             <span
               class="
                 footer-block__social-text footer-block__social-text--inline
@@ -545,7 +618,11 @@
 
           <!-- /.additional information -->
 
-          <div class="footer-block__legal">
+          <div
+            class="footer-block__legal"
+            data-aos="zoom-out-down"
+            data-aos-duration="750"
+          >
             <h3 class="footer-block__title footer-block__title--legal">
               Legal information
             </h3>
@@ -568,13 +645,17 @@
         </div>
         <!-- /.footer-block -->
         <div class="footer-block-bottom">
-          <div class="footer-contacts">
+          <div
+            class="footer-contacts"
+            data-aos="fade-up"
+            data-aos-duration="750"
+          >
             <h3 class="footer-contacts__title">Contact Details</h3>
             <span class="footer-contacts__subtitle"
               >Feel free to contact us by phone, email or by our contact
               form</span
             >
-            <div class="footer-contacts__icon">
+            <div class="footer-contacts__icon footer-contacts__icon-geo">
               <img
                 src="img/footer-geo.svg"
                 class="footer-contacts__photo footer-contacts__geo"
@@ -585,7 +666,7 @@
                 States
               </span>
             </div>
-            <div class="footer-contacts__icon">
+            <div class="footer-contacts__icon footer-contacts__icon-phone">
               <img
                 src="img/footer-phone.svg"
                 class="footer-contacts__photo footer-contacts__phone"
@@ -602,7 +683,7 @@
                 </div>
               </span>
             </div>
-            <div class="footer-contacts__icon">
+            <div class="footer-contacts__icon footer-contacts__icon-email">
               <img
                 src="img/footer-email.svg"
                 class="footer-contacts__photo footer-contacts__email"
@@ -617,7 +698,7 @@
           </div>
           <!-- /.footer-contacts -->
 
-          <div class="footer-form">
+          <div class="footer-form" data-aos="fade-left">
             <h3 class="footer-form__text">Send us a message</h3>
             <form action="send.php" method="POST" class="footer-forms form">
               <div class="footer-forms__input-group">
@@ -632,7 +713,7 @@
               <div class="footer-forms__input-group">
                 <input
                   type="tel"
-                  class="input footer-forms__phone phone_us"
+                  class="input footer-forms__phone phone-us"
                   placeholder="Phone Number*"
                   name="phone"
                   required
@@ -742,7 +823,7 @@
             />
             <input
               type="tel"
-              class="input modal-forms__phone phone_us"
+              class="input modal-forms__phone phone-us"
               placeholder="Phone Number*"
               name="phone"
               required
@@ -777,6 +858,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

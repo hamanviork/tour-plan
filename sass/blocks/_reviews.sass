@@ -12,7 +12,7 @@
             outline: none
             width: 30px
             top: 62%
-            transform: translateY(-50%) // Корректирует размеры кнопок по середине
+            transform: translateY(-75%) // Корректирует размеры кнопок по середине
             z-index: 99
             height: 30px
             border: none
@@ -22,10 +22,10 @@
             background-size: 10px
             background-color: transparent
             &_next
-                margin-right: -1000px
+                margin-right: -1045px
                 background-image: url(../img/arrow-right-reviews.svg)
             &_prev
-                margin-right: 1000px
+                margin-right: 1040px
                 background-image: url(../img/arrow-left-reviews.svg)
     &-title
         display: flex
@@ -50,6 +50,8 @@
         justify-content: center
         cursor: pointer
         position: relative
+        &__star
+            margin-right: -1.5px
         &__item
             display: flex
             flex-direction: column
@@ -106,7 +108,7 @@
             font-size: 10px
             line-height: 13px
         &__stars
-            padding-bottom: 30px
+            padding-bottom: 10px
         &__text
             max-width: 537px
             font-weight: normal

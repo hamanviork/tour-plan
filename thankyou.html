@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;800&display=swap"
@@ -144,7 +145,19 @@
       <div class="container">
         <div class="hotel-info">
           <h2 class="hotel-info__text">
-            <a class="hotel-info__text-mess" href="index.html">Message sent!</a>
+            <div
+              class="hotel-info__text-mess"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              Message sent!
+            </div>
+            <a
+              href="index.html"
+              class="hotel-info__text-return"
+              data-aos="fade-right"
+              >Вернуться на главную страницу</a
+            >
           </h2>
         </div>
         <!-- /.hotel-info -->
@@ -156,14 +169,22 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
-          <a class="footer-block__logo" href="index.html">
+          <a
+            class="footer-block__logo"
+            href="index.html"
+            data-aos="zoom-in-right"
+          >
             <img
               src="img/Best-tour-plan-vertical.svg"
               alt="Logo: Best tour plan"
               class="footer-block__logo"
             />
           </a>
-          <div class="footer-block__categories">
+          <div
+            class="footer-block__categories"
+            data-aos="zoom-out-down"
+            data-aos-duration="750"
+          >
             <h3 class="footer-block__title footer-block__title--categories">
               All categories
             </h3>
@@ -196,7 +217,11 @@
           </div>
           <!-- /.All categories -->
 
-          <div class="footer-block__additional">
+          <div
+            class="footer-block__additional"
+            data-aos="zoom-out-down"
+            data-aos-duration="750"
+          >
             <h3 class="footer-block__title footer-block__title--additional">
               Additional information
             </h3>
@@ -221,7 +246,11 @@
               </li>
             </ul>
           </div>
-          <div class="footer-block__social">
+          <div
+            class="footer-block__social"
+            data-aos="fade-up-left"
+            data-aos-duration="750"
+          >
             <span
               class="
                 footer-block__social-text footer-block__social-text--inline
@@ -249,7 +278,11 @@
 
           <!-- /.additional information -->
 
-          <div class="footer-block__legal">
+          <div
+            class="footer-block__legal"
+            data-aos="zoom-out-down"
+            data-aos-duration="750"
+          >
             <h3 class="footer-block__title footer-block__title--legal">
               Legal information
             </h3>
@@ -272,13 +305,17 @@
         </div>
         <!-- /.footer-block -->
         <div class="footer-block-bottom">
-          <div class="footer-contacts">
+          <div
+            class="footer-contacts"
+            data-aos="fade-up"
+            data-aos-duration="750"
+          >
             <h3 class="footer-contacts__title">Contact Details</h3>
             <span class="footer-contacts__subtitle"
               >Feel free to contact us by phone, email or by our contact
               form</span
             >
-            <div class="footer-contacts__icon">
+            <div class="footer-contacts__icon footer-contacts__icon-geo">
               <img
                 src="img/footer-geo.svg"
                 class="footer-contacts__photo footer-contacts__geo"
@@ -289,7 +326,7 @@
                 States
               </span>
             </div>
-            <div class="footer-contacts__icon">
+            <div class="footer-contacts__icon footer-contacts__icon-phone">
               <img
                 src="img/footer-phone.svg"
                 class="footer-contacts__photo footer-contacts__phone"
@@ -306,7 +343,7 @@
                 </div>
               </span>
             </div>
-            <div class="footer-contacts__icon">
+            <div class="footer-contacts__icon footer-contacts__icon-email">
               <img
                 src="img/footer-email.svg"
                 class="footer-contacts__photo footer-contacts__email"
@@ -321,7 +358,7 @@
           </div>
           <!-- /.footer-contacts -->
 
-          <div class="footer-form">
+          <div class="footer-form" data-aos="fade-left">
             <h3 class="footer-form__text">Send us a message</h3>
             <form action="send.php" method="POST" class="footer-forms form">
               <div class="footer-forms__input-group">
@@ -336,7 +373,7 @@
               <div class="footer-forms__input-group">
                 <input
                   type="tel"
-                  class="input footer-forms__phone phone_us"
+                  class="input footer-forms__phone phone-us"
                   placeholder="Phone Number*"
                   name="phone"
                   required
@@ -426,10 +463,12 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

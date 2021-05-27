@@ -56,6 +56,10 @@ $(document).ready(function () {
             required: true,
             email: true
           },
+          phone: {
+            required: true,
+            phone: true
+          },
         },
         messages: {
           name: "Please, enter your name",
@@ -64,12 +68,16 @@ $(document).ready(function () {
             email: "Your email address must be in the format of name@domain.com"
           },
           phone: {
-            required: "Write your phone number"
+            required: "Write your phone number",
+            phone: "Your phone number must be in the format of +7 (999) 999-9999"
           }
         },
       });
     });
 
     // Маска для телефона (jquery mask plugin)
-    $('.phone_us').mask('+7 (999) 999-9999');
+    $('.phone-us').mask('+7 (999) 999-9999');
+    
+    // Инициализируем анимацию
+    AOS.init();
 });

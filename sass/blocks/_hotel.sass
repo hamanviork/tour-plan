@@ -31,13 +31,25 @@
             color: #fff
         &__stars
             flex-basis: 50% // ЧТобы отодвинулся друг от друга
+        &__star
+            margin-right: -1px
         &__text
             &-mess
                 text-transform: uppercase
-                text-decoration: none
                 color: #000
                 font-size: 36px
-
+                margin-bottom: 20px
+            &-return
+                text-transform: uppercase
+                text-decoration: none
+                color: #fff
+                padding-top: 10px
+                padding-right: 10px
+                padding-bottom: 10px
+                padding-left: 10px
+                border-radius: 10px
+                font-size: 10px
+                background-color: $dark
     &-name
         font-size: 24px
         line-height: 30px
@@ -137,6 +149,7 @@
         border: none
         cursor: pointer
         flex-shrink: 0
+        flex-wrap: nowrap
         color: white
         margin-top: 17px
         padding-top: 16px

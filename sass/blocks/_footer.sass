@@ -20,6 +20,7 @@
             display: grid
             max-width: 166px
             align-items: center
+            grid-row: 1 / 4
         &__title
             color: #fff
             font-weight: bold
@@ -44,6 +45,10 @@
                 margin-right: 10px
             &-yt
                 margin-right: 10px
+
+        &__categories
+            grid-column: 2 / 3
+
     // Contacts, bottom
     &-block
         &-bottom
@@ -69,17 +74,21 @@
         &__photo
             margin-right: 18px
             margin-top: 4.5px
-        &__icon
-            display: flex
-            align-items: flex-start
-            margin-top: 28px
-            margin-left: 8px
         &__text
             font-weight: normal
             font-size: 14px
             line-height: 160%
             color: #BDBDBD
             text-decoration: none
+        &__icon
+            display: flex
+            align-items: flex-start
+            margin-top: 26px
+            margin-left: 8px
+            &-phone
+                margin-top: 20px
+            &-email
+                margin-top: 20px
     &-form
         width: 539px
         &__text
