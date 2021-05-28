@@ -1574,7 +1574,7 @@ template {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1002px) {
   .container, .hotel-grid {
     width: 740px;
   }
@@ -2078,6 +2078,33 @@ template {
   }
 }
 
+@media (max-width: 607px) {
+  .container {
+    width: 480px;
+  }
+  .slider {
+    max-width: 100%;
+  }
+  .booking {
+    width: 100%;
+    max-width: 100%;
+  }
+  .booking__button {
+    width: 100%;
+  }
+  .google-map {
+    width: 100%;
+    height: 320px;
+    right: 0px;
+    top: 435px;
+  }
+  .google-map-settings {
+    max-width: 100%;
+    width: 100%;
+    height: 320px;
+  }
+}
+
 @media (max-width: 577px) {
   .footer-block__social {
     grid-column: 2 / 3;
@@ -2095,7 +2122,7 @@ template {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .container {
     width: 87%;
   }
@@ -2137,7 +2164,28 @@ template {
     width: 85%;
   }
   .header-logo__image {
-    width: 120px;
+    width: 103px;
+  }
+  .slider {
+    height: 179px;
+  }
+  .hotel {
+    padding-top: 12px;
+    padding-bottom: 0;
+  }
+  .hotel-info {
+    padding-bottom: 42px;
+  }
+  .hotel-name {
+    width: 280px;
+    letter-spacing: -0.45px;
+    margin-right: 0;
+  }
+  .hotel-slider {
+    height: 179px;
+  }
+  .hotel-grid {
+    height: 640px;
   }
   .booking {
     max-width: 112.3%;
@@ -2146,11 +2194,42 @@ template {
     padding-right: 20px;
     padding-left: 20px;
   }
-  .subscribe-search__input {
-    width: 260px;
+  .google-map {
+    top: 200px;
+    height: 170px;
   }
-  .search__input {
-    width: 240px;
+  .google-map-settings {
+    height: 170px;
+  }
+  .reviews-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.6px;
+    margin-bottom: 43px;
+  }
+  .subscribe {
+    height: 319px;
+  }
+  .subscribe-search__input {
+    width: 280px;
+  }
+  .fun {
+    margin-bottom: 42px;
+  }
+  .fun-block {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    width: 280px;
+    max-width: 280px;
+    height: 255px;
+  }
+  .fun__text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 14px;
   }
   .footer-block__logo {
     grid-row: 1 / 2;
@@ -2159,6 +2238,9 @@ template {
     grid-column: 1 / 2;
     grid-row: 3 / 3;
     margin-bottom: 50px;
+  }
+  .footer-block__social-text {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
