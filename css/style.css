@@ -1491,6 +1491,46 @@ template {
   line-height: 15px;
 }
 
+@media (min-width: 992px) {
+  .search__button:hover {
+    background-color: #E32636;
+  }
+  .navbar-menu__link:hover {
+    color: #b3b3b3;
+  }
+  .hotel-info__text-return:hover {
+    background-color: #1A153F;
+  }
+  .booking__button:hover {
+    background-color: #E32636;
+  }
+  .subscribe-search__button:hover {
+    background-color: #E32636;
+  }
+  .fun-block__button:hover {
+    background-color: #E32636;
+  }
+  .footer-contacts__text-a:hover {
+    color: #666666;
+  }
+  .footer-contacts__text-email {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: #BDBDBD;
+    text-decoration: none;
+  }
+  .footer-contacts__text-email:hover {
+    color: #666666;
+  }
+  .footer-forms__button:hover {
+    background-color: #E32636;
+  }
+  .footer-block-bottom-nav__button:hover {
+    color: #666666;
+  }
+}
+
 @media (max-width: 1200px) {
   .container, .hotel-grid {
     width: 950px;
