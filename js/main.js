@@ -54,6 +54,7 @@ $(document).ready(function () {
             name: "required",
             phone: {
               required: true,
+              minlength: 17
             },
             email: {
               required: true,
@@ -63,7 +64,8 @@ $(document).ready(function () {
           messages: {
             name: "Please, write your name",
             phone: {
-              required: "Please, write your phone number"
+              required: "Please, write your phone number",
+              minlength: "Please, write your full phone number"
             },
             email: {
               required: "We need your email address to contact you",

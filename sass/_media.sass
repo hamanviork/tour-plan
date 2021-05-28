@@ -8,19 +8,17 @@
         display: flex
         flex-wrap: wrap
         flex-basis: 100%
-        max-width: 950px
+        max-width: 570px
     .swiper
         &-container
-            height: 550px
+            height: 450px
     .booking
-        margin-top: 30px
+        margin-top: 0
     .google-map
-        width: 300px
+        position: absolute
         top: 0
         right: 0
-        left: 0
-        margin-top: 30px
-        margin-left: 190px
+        margin-top: 240px
     .reviews
         &-slider
             height: 100%
@@ -94,18 +92,70 @@
             height: 480px
     .booking
         margin-top: 20px
-        max-width: 310px
+        max-width: 360px
         height: 210px
+        margin-left: 0
         &__button
-            padding-left: 55px
-            padding-right: 55px
+            width: 310px
+            flex-wrap: nowrap
+
+    .slider
+        max-width: 100%
+        flex-basis: 50%
+
+    .hotel
+        &-slider
+            width: 100%
+            height: 410px
+
     .google-map
-        width: 250px
-        margin-top: 20px
-        margin-left: 80px
+        width: 360px
+        height: 220px
+        top: 190px
+        right: 0
         &__card
             width: 300px
             height: 210px
+
+    .subscribe
+        &-search
+            &__input
+                width: 370px
+        &-block
+            &__title
+                font-weight: 400
+                font-size: 36px
+                line-height: 45px
+                letter-spacing: 1.5px
+
+    .reviews
+        &-title
+            letter-spacing: 1.3px
+            font-weight: bold
+            font-size: 30px
+            line-height: 38px
+        &-slide
+            &__item
+                width: 579px
+            &__text
+                width: 455px
+
+    .fun
+        flex-wrap: nowrap
+        flex-shrink: 1
+        &-block
+            width: 49%
+            height: 265px
+        &__text
+            margin-top: 110px
+        &-wrap
+            flex-wrap: wrap
+            &__first
+                margin-right: 10px
+            &__second
+                margin-right: 0px
+            &__third
+                margin-right: 0px
 
     .footer
         &-block
@@ -129,14 +179,6 @@
                     margin-right: -350px
                 &_prev
                     margin-right: 1100px
-    .fun
-        flex-wrap: nowrap
-        flex-shrink: 1
-        &-block
-            width: 339px
-            height: 255px
-        &__text
-            margin-top: 110px
 
     .footer
         &-block
@@ -169,95 +211,48 @@
 @media (max-width: 768px)
     .container, .hotel-grid
         width: 90%
-    body
-        padding-top: 89px
-    .header--mobile_fixed
-        position: fixed
-        left: 0
-        top: 0
-        right: 0
-        z-index: 99
-
-    .navbar
-        display: none
-        position: fixed
-        left: 0
-        right: 0
-        bottom: 0
-        top: 85px
-        z-index: 100
-        &--visible
-            display: block
-        &-menu
-            flex-direction: column
-            align-items: center
-            &__item
-                margin-bottom: 20px
-
-    .header__search, .header__user
-        &--mobile
-            &_hidden
-                display: none
-
-    .navbar__search, .navbar__user, .navbar-menu__item
-        &--mobile
-            &_hidden
-                display: flex
-            &_visible
-                display: flex
-
-    .user
-        &__name
-            padding-top: 10px
-            padding-left: 0
-            color: #fff
-    .navbar
-        &--visible
-            overflow: scroll
-        &__user
-            flex-direction: column
-            align-items: center
-
     .hotel
         &-grid
             margin-right: 0
 
+    .search__input
+        width: 280px
+
     .mobile-menu
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: space-between
-        cursor: pointer
-        width: 16px
-        height: 11px
-        border: none
-        &__line
-            width: 16px
-            height: 1px
-            background-color: #000000
+        display: none
     .slider
         max-width: 112.3%
     .swiper
         &-container
             height: 380px
-    .booking
-        margin-top: 20px
-        margin-left: auto
-        margin-right: auto
-        max-width: 250px
-        height: 210px
-        &__button
-            padding-left: 29px
-            padding-right: 29px
     .price
         &__quick
             font-size: 12px
+
+    .navbar
+        &-menu
+            &__link
+                font-size: 12px
+                line-height: 15px
+
+    .booking
+        max-width: 320px
+        margin-right: 10px
+        &__button
+            width: 230px
+            height: 45px
+            flex-wrap: nowrap
+            font-weight: 600
+            font-size: 12px
+            line-height: 19px
+            &-text
+                width: auto
+
     .google-map
-        flex-wrap: nowrap
-        width: 250px
-        margin-top: 20px
-        margin-left: auto
-        margin-right: auto
+        width: 300px
+        height: 220px
+        right: -70px
+        top: 162px
 
     // Hotel
     .hotel
@@ -319,17 +314,15 @@
                 width: 455px
         &-btns
             display: none
-    .fun
-        flex-wrap: nowrap
-        flex-shrink: 1
-        &-block
-            width: 270px
-            height: 255px
 
     .footer
         padding-top: 73px
+        &-form
+            margin-top: 60px
         &-block
             margin-bottom: 30px
+            &-bottom
+                flex-wrap: wrap
             &__title
                 font-size: 14px
         &-forms
@@ -357,6 +350,71 @@
 @media (max-width: 667px)
     .container
         width: 90%
+
+    body
+        padding-top: 89px
+
+    .header--mobile_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+
+    .navbar
+        display: none
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 85px
+        z-index: 100
+        &--visible
+            display: block
+        &-menu
+            flex-direction: column
+            align-items: center
+            &__item
+                margin-bottom: 20px
+
+    .header__search, .header__user
+        &--mobile
+            &_hidden
+                display: none
+
+    .navbar__search, .navbar__user, .navbar-menu__item
+        &--mobile
+            &_hidden
+                display: flex
+            &_visible
+                display: flex
+
+    .mobile-menu
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        cursor: pointer
+        width: 16px
+        height: 11px
+        border: none
+        &__line
+            width: 16px
+            height: 1px
+            background-color: #000000
+
+    .user
+        &__name
+            padding-top: 10px
+            padding-left: 0
+            color: #fff
+    .navbar
+        &--visible
+            overflow: scroll
+        &__user
+            flex-direction: column
+            align-items: center
+
     .header
         &-logo
             &__image

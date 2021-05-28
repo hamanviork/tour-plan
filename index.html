@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -266,11 +267,11 @@
 
             <span class="room">
               <span class="room__guest room__user">
-                <img src="img/user.svg" alt="Icon: user" />
+                <img src="img/user.svg" class="room__image" alt="Icon: user" />
                 <span class="room__text">2 x Guests</span>
               </span>
               <span class="room__guest room__home">
-                <img src="img/home.svg" alt="Icon: home" />
+                <img src="img/home.svg" class="room__image" alt="Icon: home" />
                 <span class="room__text">1 x Room</span>
               </span>
               <span class="room__phone">
@@ -279,7 +280,7 @@
               </span>
             </span>
             <!-- /.room -->
-            <button data-toggle="modal" class="button booking__button">
+            <button data-toggle="modal" class="button booking__button booking__button-text">
               View Other Options
             </button>
           </span>
@@ -466,7 +467,9 @@
             <div class="fun-block__text fun-block__text-first">
               The curious corner of chamarel
             </div>
-            <button class="fun-block__button">Book Now</button>
+            <button class="fun-block__button" data-toggle="modal">
+              Book Now
+            </button>
           </div>
           <div
             class="fun-block fun-wrap__second"
@@ -476,7 +479,9 @@
             <div class="fun-block__text fun-block__text-second">
               Gymkhana club golf course
             </div>
-            <button class="fun-block__button">Book Now</button>
+            <button class="fun-block__button" data-toggle="modal">
+              Book Now
+            </button>
           </div>
           <div
             class="fun-block fun-wrap__third"
@@ -486,7 +491,9 @@
             <div class="fun-block__text fun-block__text-third">
               Tamarind falls hiking trip - full day
             </div>
-            <button class="fun-block__button">Book Now</button>
+            <button class="fun-block__button" data-toggle="modal">
+              Book Now
+            </button>
           </div>
           <div
             class="fun-block fun-wrap__fourth"
@@ -496,7 +503,9 @@
             <div class="fun-block__text fun-block__text-fourth">
               The blue marine discovery quest
             </div>
-            <button class="fun-block__button">Book Now</button>
+            <button class="fun-block__button" data-toggle="modal">
+              Book Now
+            </button>
           </div>
         </div>
       </div>
@@ -664,13 +673,25 @@
                 alt="Icon: phone"
               />
               <span class="footer-contacts__text">
-                <div>Tel (business hours) : 269 1500</div>
                 <div>
-                  Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                  pm)
+                  Tel (business hours) :
+                  <a href="tel:269 1500" class="footer-contacts__text-a"
+                    >269 1500</a
+                  >
                 </div>
                 <div>
-                  Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                  Tel (hotline) Monday - Saturday:
+                  <a href="tel:52-56-61-38" class="footer-contacts__text-a"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 20:00 pm)
+                </div>
+                <div>
+                  Tel (hotline) Sunday:
+                  <a href="tel:52-56-61-38" class="footer-contacts__text-a"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 14:00 pm)
                 </div>
               </span>
             </div>
@@ -698,6 +719,7 @@
                   class="input footer-forms__username"
                   placeholder="Your Full Name*"
                   name="name"
+                  minlength="2"
                   required
                 />
               </div>
@@ -707,6 +729,7 @@
                   class="input footer-forms__phone phone-us"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="17"
                   required
                 />
               </div>
@@ -810,7 +833,7 @@
               class="input modal-forms__username"
               placeholder="Your Full Name*"
               name="name"
-              minlenght="2"
+              minlength="2"
               required
             />
             <input
@@ -818,7 +841,7 @@
               class="input modal-forms__phone phone-us"
               placeholder="Phone Number*"
               name="phone"
-              minlenght="10"
+              minlength="17"
               required
             />
             <input
