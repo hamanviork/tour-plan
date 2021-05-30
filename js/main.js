@@ -10,7 +10,6 @@ $(document).ready(function () {
 
   const swiper2 = new Swiper('.reviews-slider', {
     loop: true,
-    effect: 'coverflow',
     navigation: {
       nextEl: '.reviews-btns__button_next',
       prevEl: '.reviews-btns__button_prev',
