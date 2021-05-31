@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700&display=swap"
       rel="stylesheet"
     />
@@ -87,7 +91,7 @@
             >
               <input
                 type="text"
-                class="search__input"
+                class="input search__input"
                 placeholder="Search Location"
               />
               <button class="search__button">
@@ -148,13 +152,7 @@
     <section class="hotel">
       <div class="container">
         <div class="hotel-info">
-          <div
-            class="hotel-info__text"
-            data-aos="fade-bottom"
-            data-aos-offset="300"
-            data-aos-duration="500"
-            data-aos-easing="ease-in-sine"
-          >
+          <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars hotel-info__stars">
                 <img
@@ -206,7 +204,7 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider" data-aos="fade-up" data-aos-duration="900">
+          <div class="slider">
             <div class="swiper-container hotel-slider hotel__slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide hotel-grid__slide">
@@ -259,7 +257,7 @@
             <!-- /.swiper-container -->
           </div>
           <!-- /.slider -->
-          <span class="booking" data-aos="fade-down" data-aos-duration="700">
+          <span class="booking">
             <span class="price">
               <span class="price__start">price starts as</span>
               <span class="price__tag">$ 8,500</span>
@@ -290,7 +288,7 @@
             </button>
           </span>
           <!-- /.booking -->
-          <div class="google-map" data-aos="fade-up" data-aos-duration="1500">
+          <div class="google-map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0046814309244!2d79.80202785900234!3d7.574466994537757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1622128957442!5m2!1sru!2sru"
               width="350"
@@ -314,10 +312,15 @@
           <span class="subscribe-block__subtitle">subscribe to our</span>
           <h2 class="subscribe-block__title">Newsletter</h2>
         </div>
-        <form action="#" class="subscribe-search form" data-aos="fade-up">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe-search form"
+          data-aos="fade-up"
+        >
           <input
             type="email"
-            class="subscribe-search__input"
+            class="input subscribe-search__input"
             placeholder="Your email address"
             required
             name="email"
@@ -704,20 +707,20 @@
               <span class="footer-contacts__text">
                 <span>
                   Tel (business hours) :
-                  <a href="tel:269 1500" class="footer-contacts__text-a"
+                  <a href="tel:2691500" class="footer-contacts__text-a"
                     >269 1500</a
                   > </span
                 ><br />
                 <span>
                   Tel (hotline) Monday - Saturday:
-                  <a href="tel:52-56-61-38" class="footer-contacts__text-a"
+                  <a href="tel:52566138" class="footer-contacts__text-a"
                     >52-56-61-38</a
                   >
                   (08:00 am – 20:00 pm) </span
                 ><br />
                 <span>
                   Tel (hotline) Sunday:
-                  <a href="tel:52-56-61-38" class="footer-contacts__text-a"
+                  <a href="tel:52566138" class="footer-contacts__text-a"
                     >52-56-61-38</a
                   >
                   (08:00 am – 14:00 pm)
